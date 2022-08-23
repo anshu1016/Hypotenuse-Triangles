@@ -12,7 +12,7 @@ function validateSides(){
         showAns.innerText = "Hypotenue is: "+hypotenuse + " units"; 
     }
     else{
-        showAns.innerText = "Fill valid  inputs..";
+        showAns.innerText = "Fill valid  inputs. ( Make sure inputs are not negatives) ";
     }
 }
 function calculateHpt(a,b)
