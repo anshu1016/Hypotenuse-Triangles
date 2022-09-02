@@ -2,6 +2,16 @@ const sideAngles = document.querySelectorAll(".input-side");
 const btnHpt = document.querySelector("#Submit")
 const showAns = document.querySelector("#result")
 
+let links = document.querySelectorAll(".pages a");
+let bodyId = document.querySelector("body").id;
+ 
+for(let link of links){
+    if(link.dataset.active == bodyId){
+        link.classList.add("active");
+    }
+}
+
+
 btnHpt.addEventListener("click",validateSides);
 
 function validateSides(){
